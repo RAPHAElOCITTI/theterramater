@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { supabase } from "./supabaseClient";
 import type { Testimonial } from "./db";
 
-const App: React.FC = () => {
+const App: React.FC = (): ReactNode => {
   const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
 
   useEffect(() => {
